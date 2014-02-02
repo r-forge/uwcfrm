@@ -1,0 +1,21 @@
+Package: covariance
+Type: Package
+Title: Methods for estimating covariance matrices
+Version: 0.1
+Date: 2013-12-18
+Author: Ross Bennett
+Contributors: TODO
+Maintainer: Ross Bennett <rossbennett34@gmail.com>
+Description: More about what it does (maybe more than one line)
+License: What license is it under?
+Depends:
+    R (>= 2.14.0),
+    zoo,
+    xts (>= 0.8-9),
+    rrcov
+Collate:
+    'cov_estimate.R'
+    'shrinkage.R'
+    'utils.R'
+    'exponential_smoothing.R'
+    'outlier.R'
