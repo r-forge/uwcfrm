@@ -1,4 +1,4 @@
-Package: covariance
+Package: fincov
 Type: Package
 Title: Methods for estimating covariance matrices
 Version: 0.1

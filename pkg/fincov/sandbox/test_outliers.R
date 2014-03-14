@@ -1,5 +1,8 @@
 # test the outlier detection
 # Ch 6.7 in Scherer and Martin
+
+library(lattice)
+
 file <- "/Users/rossbennett/Documents/UW Comp Fin/Portfolio-Optimization-Asset-Management/Material/chap6/normal.vs.hectic.ts.csv"
 
 dat <- read.csv(file, header=TRUE)
@@ -15,7 +18,8 @@ x <- outliers$threshold
 
 m_dat <- data.frame(robust=outliers$robust_mahalanobis, classical=outliers$classical_mahalanobis)
 idx <- 1:nrow(dat)
-xyplot(m_dat~idx)
+
+xyplot(m_dat, layout=c(2,1))
 
 # par(mfrow=c(1,2))
 # par(mfrow=c(1,1))
